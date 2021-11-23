@@ -22,10 +22,10 @@ patches:
         path: /metadata/name
         value: custom-kubelet
       - op: add
-        path: /metadata/nodeSelector
+        path: /spec/nodeSelector
         value: {matchLabels: {node-role.kubernetes.io/master: ''}}
       - op: add
-        path: /metadata/machineConfigSelector
+        path: /spec/machineConfigSelector
         value: {matchLabels: {machineconfiguration.openshift.io/role: master}}
       - op: add
         path: /metadata/labels
