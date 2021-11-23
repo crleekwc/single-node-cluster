@@ -1,17 +1,4 @@
 apiVersion: machineconfiguration.openshift.io/v1
-kind: MachineConfigPool
-metadata:
-  labels: {}
-  name: machine-config-pool
-spec:
-  machineConfigSelector:
-    matchLabels:
-      machineconfiguration.openshift.io/role: master
-  nodeSelector:
-    matchLabels:
-      node-role.kubernetes.io/master: ''
----
-apiVersion: machineconfiguration.openshift.io/v1
 kind: KubeletConfig
 metadata:
   name: configure-kubeconfig 
