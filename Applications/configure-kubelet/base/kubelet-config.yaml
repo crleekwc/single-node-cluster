@@ -3,6 +3,7 @@ kind: MachineConfigPool
 metadata:
   labels: {}
   name: machine-config-pool
+spec:
   machineConfigSelector:
     matchLabels:
       machineconfiguration.openshift.io/role: master
