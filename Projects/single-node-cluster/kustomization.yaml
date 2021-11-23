@@ -11,4 +11,3 @@ resources:
   - overlays/local-storage/create-local-volumes/image-registry
   - overlays/configure-kubelet
   - overlays/openshift-monitoring
-  - overlays/openshift-image-registry/block-storage
