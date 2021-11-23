@@ -8,3 +8,4 @@ resources:
   - overlays/local-storage/operator/latest
   - overlays/local-storage/create-local-volumes/image-registry
   - overlays/local-storage/create-local-volumes/monitoring
+  - overlays/configure-kubelet
