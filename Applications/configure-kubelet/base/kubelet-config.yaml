@@ -47,4 +47,4 @@ spec:
     imageGCHighThresholdPercent: 80 
     imageGCLowThresholdPercent: 75
     eventRecordQPS: 5
-    protectKernelDefaults: defaults
+    protectKernelDefaults: true
