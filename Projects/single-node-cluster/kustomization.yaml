@@ -12,3 +12,5 @@ resources:
   - overlays/configure-kubelet
   - overlays/openshift-monitoring
   - overlays/openshift-image-registry/block-storage
+  - overlays/openshift-elasticsearch/operator/stable
+  - overlays/openshift-logging/operator/stable
