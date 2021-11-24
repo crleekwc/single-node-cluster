@@ -15,4 +15,3 @@ resources:
   - overlays/openshift-image-registry/block-storage
   - overlays/openshift-elasticsearch/operator/stable
   - overlays/openshift-logging/operator/stable
-  - overlays/openshift-logging/create-cluster-logging-instance
