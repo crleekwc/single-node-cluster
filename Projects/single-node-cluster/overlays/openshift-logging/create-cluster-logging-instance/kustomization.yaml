@@ -16,7 +16,7 @@ patches:
         value: {}
       - op: replace
         path: /spec/logStore/elasticsearch/resources/limits/memory
-        value: 8Gi
+        value: 5Gi
       - op: replace
         path: /spec/logStore/elasticsearch/resources/requests/memory
-        value: 8Gi
+        value: 5Gi
