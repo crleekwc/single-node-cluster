@@ -9,15 +9,14 @@ patches:
       kind: ClusterLogging
       name: instance
     patch: |-
-      - op: replace
+      - op: remove
         path: /spec/logStore/elasticsearch/storage/storageClassName
-        value: 'cluster-logging'
+      - op: replace
+        path: /spec/logStore/elasticsearch/storage
+        value: {}
       - op: replace
         path: /spec/logStore/elasticsearch/resources/limits/memory
         value: 8Gi
       - op: replace
         path: /spec/logStore/elasticsearch/resources/requests/memory
         value: 8Gi
-      - op: replace
-        path: /spec/logStore/elasticsearch/nodeCount
-        value: 1
