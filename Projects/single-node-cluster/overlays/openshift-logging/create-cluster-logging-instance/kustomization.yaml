@@ -18,6 +18,3 @@ patches:
       - op: replace
         path: /spec/logStore/elasticsearch/resources/requests/memory
         value: 8Gi
-      - op: replace
-        path: /spec/logStore/elasticsearch/nodeCount
-        value: 1
