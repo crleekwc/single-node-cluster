@@ -8,5 +8,5 @@ namespace: openshift-operators-redhat
 
 resources:
   - namespace.yaml
-  - elastisearch-subscription.yaml
+  - elasticsearch-subscription.yaml
   - elasticsearch-operatorgroup.yaml
