@@ -2,6 +2,8 @@
 apiVersion: machineconfiguration.openshift.io/v1
 kind: MachineConfig
 metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "-1"
   labels:
     machineconfiguration.openshift.io/role: master
   name: 75-master-kubelet-sysctls
@@ -19,6 +21,8 @@ spec:
 apiVersion: machineconfiguration.openshift.io/v1
 kind: MachineConfig
 metadata:
+  annotations:
+    argocd.argoproj.io/sync-wave: "-1"
   labels:
     machineconfiguration.openshift.io/role: worker
   name: 75-worker-kubelet-sysctls
