@@ -14,16 +14,3 @@ patches:
       - op: add
         path: /spec/machineConfigPoolSelector/matchLabels
         value: {custom-kubelet: small-pods}
-  - target:
-      kind: MachineConfigPool
-      name: machine-config-pool
-    patch: |-
-      - op: replace
-        path: /metadata/name
-        value: custom-kubelet
-      - op: add
-        path: /spec/nodeSelector
-        value: {matchLabels: {kubernetes.io/hostname: openshift-node.escbutton.com}}
-      - op: add
-        path: /metadata/labels
-        value: {custom-kubelet: small-pods}
