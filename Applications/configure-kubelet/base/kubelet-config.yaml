@@ -33,5 +33,5 @@ spec:
     imageMinimumGCAge: 5m 
     imageGCHighThresholdPercent: 80 
     imageGCLowThresholdPercent: 75
-    eventRecordQPS: 5
+#    eventRecordQPS: 5
     protectKernelDefaults: true
