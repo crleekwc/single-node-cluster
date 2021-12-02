@@ -10,9 +10,6 @@ spec:
   kubeletConfig:
     podsPerCore: 10
     maxPods: 250
-    systemReserved:
-      cpu: 2000m
-      memory: 5Gi
     evictionSoft: 
       memory.available: "500Mi" 
       nodefs.available: "10%"
