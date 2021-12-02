@@ -5,4 +5,5 @@ commonAnnotations:
   argocd.argoproj.io/sync-wave: "0"
 
 resources:
+  - kubelet-sysctls.yaml
   - kubelet-config.yaml
