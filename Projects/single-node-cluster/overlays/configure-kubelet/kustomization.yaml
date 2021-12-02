@@ -23,10 +23,7 @@ patches:
         value: custom-kubelet
       - op: add
         path: /spec/nodeSelector
-        value: {matchLabels: {node-role.kubernetes.io/master: ''}}
-      - op: add
-        path: /spec/machineConfigSelector
-        value: {matchLabels: {machineconfiguration.openshift.io/role: master}}
+        value: {matchLabels: {kubernetes.io/hostname: openshift-node.escbutton.com}}
       - op: add
         path: /metadata/labels
         value: {custom-kubelet: small-pods}
