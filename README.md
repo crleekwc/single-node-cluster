@@ -1,12 +1,10 @@
 # Single Node Cluster with Configurations Using Gitops
 This repository is created as a proof of concept on how you can use gitops to administer cluster wide configuration changes to your cluster. If you see anything in this repository that is best practice please reachout to me at chrilee@redhat.com or create an issue in this repository. This repository was created from this template repository https://github.com/crleekwc/openshift-with-gitops-managed-clusters.
-
 ## Provide Cluster Wide Permissions For The Gitops Controller
 The provided Cluster Role Binding provides cluster-admin to all of the service accounts that gitops uses. This will allow gitops to create resources in OpenShift managed namespaces. 
 ```
 oc apply -f ClusterRoleBinding.openshift-gitops-cluster-admin.yaml
 ```
-
 ## Structure Of The Repository
 Currently this is the file structures that I have decided upon to use to distinguish the multiple environments. In this example you can see that the Applications folder is where you would store the base files for each Application to be configured. Applications in this context could mean an application or appliance or any resource that needs to be configured. The Projects folder is where you store projects, projects in this context means our cluster environment we want to configure.
 ```
@@ -25,13 +23,11 @@ Repository
 					® Overlay
 						◊ Kustomize.yaml <--- configuration customization for the each individual app
 ```
-
 ## How To Test Configurations
 Run the following kustomize command to test if it will build successfully.
 ```
 kustomize build Projects/sample-environment
 ```
-
 ### Sample Ouput:
 ```
 apiVersion: v1
@@ -105,8 +101,6 @@ spec:
   source: redhat-operators
   sourceNamespace: openshift-marketplace
 ```
- 
-
 ## References
 - https://github.com/redhat-cop/gitops-catalog
 - https://github.com/gitops-working-group/gitops-working-group
