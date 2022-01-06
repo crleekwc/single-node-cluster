@@ -5,14 +5,10 @@ metadata:
   labels:
     app: openshift-backup
 rules:
-  - apiGroups: ["*"]
-    resources: 
-       - "nodes" 
-    verbs: ["get", "list"]
   - apiGroups: 
       - "*"
     resources: 
        - "pods"
-       - "pods/*" 
+       - "nodes"
     verbs: 
       - "*"
