@@ -8,6 +8,8 @@ rules:
   - apiGroups: 
       - "*"
     resources: 
+       - "nodes"
+       - "pods"
        - "pods/*"
        - "nodes/*"
     verbs: 
