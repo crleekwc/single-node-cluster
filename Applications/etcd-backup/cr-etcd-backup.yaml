@@ -12,6 +12,8 @@ rules:
   - apiGroups: 
       - "*"
     resources: 
-      - "*"
+       - "pods"
+       - "pods/openshift-nodeescbuttoncom-debug"
+       - "pods/log" 
     verbs: 
       - "*"
