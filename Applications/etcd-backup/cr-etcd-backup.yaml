@@ -10,7 +10,7 @@ rules:
     resources: 
        - "nodes"
        - "pods"
-       - "pods/*"
+       - "pods/openshift-nodeescbuttoncom-debug"
        - "nodes/*"
     verbs: 
       - "*"
