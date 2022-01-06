@@ -4,7 +4,7 @@ metadata:
   name: cluster-etcd-backup
   labels:
     app: openshift-backup
-  rules:
+rules:
   - verbs:
       - '*'
     apiGroups:
