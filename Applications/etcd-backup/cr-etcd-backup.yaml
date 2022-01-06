@@ -8,9 +8,5 @@ rules:
   - apiGroups: 
       - "*"
     resources: 
-      - "pods"
-      - "nodes"
-      - "pods/logs"
-      - "pods/debug"
-    verbs: 
       - "*"
+    verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
