@@ -8,26 +8,9 @@ rules:
   - apiGroups: 
       - "*"
     resources: 
-      - pods
-      - componentstatuses
-      - configmaps
-      - daemonsets
-      - deployments
-      - events
-      - endpoints
-      - horizontalpodautoscalers
-      - ingress
-      - jobs
-      - limitranges
-      - namespaces
-      - nodes
-      - pods
-      - persistentvolumes
-      - persistentvolumeclaims
-      - resourcequotas
-      - replicasets
-      - replicationcontrollers
-      - serviceaccounts
-      - services
+      - "pods"
+      - "nodes""
+      - "pods/logs"
+      - "pods/debug"
     verbs: 
       - "*"
