@@ -9,7 +9,7 @@ rules:
       - "*"
     resources: 
       - "pods"
-      - "nodes""
+      - "nodes"
       - "pods/logs"
       - "pods/debug"
     verbs: 
