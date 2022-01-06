@@ -13,7 +13,6 @@ rules:
       - "*"
     resources: 
        - "pods"
-       - "pods/openshift-nodeescbuttoncom-debug"
-       - "pods/log" 
+       - "pods/*" 
     verbs: 
       - "*"
