@@ -9,9 +9,9 @@ rules:
     resources: 
        - "nodes" 
     verbs: ["get", "list"]
-  - apiGroups: ["*"]
+  - apiGroups: 
+      - "*"
     resources: 
-      - "pods" 
-      - "pods/log" 
+      - "*"
     verbs: 
       - "*"
