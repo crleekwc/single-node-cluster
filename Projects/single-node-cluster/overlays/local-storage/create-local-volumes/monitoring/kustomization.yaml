@@ -26,5 +26,5 @@ patches:
           - devicePaths:
             - /dev/sdc
             fsType: xfs
-            storageClassName: monitoring
+            storageClassName: gp2
             volumeMode: Filesystem
