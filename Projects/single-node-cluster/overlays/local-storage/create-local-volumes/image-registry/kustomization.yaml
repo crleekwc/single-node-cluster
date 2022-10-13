@@ -26,5 +26,5 @@ patches:
           - devicePaths:
             - /dev/sdb
             fsType: xfs
-            storageClassName: image-registry
+            storageClassName: gp2
             volumeMode: Filesystem
