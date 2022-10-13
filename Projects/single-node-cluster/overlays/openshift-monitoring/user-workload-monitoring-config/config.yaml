@@ -1,7 +1,7 @@
 prometheus:
   volumeClaimTemplate:
     spec:
-      storageClassName: default
+      storageClassName: gp2
       resources:
         requests:
           storage: 40Gi
