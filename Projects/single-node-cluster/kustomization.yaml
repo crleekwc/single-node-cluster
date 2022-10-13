@@ -5,13 +5,13 @@ commonAnnotations:
   argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 
 resources:
-#  - overlays/local-storage/operator/latest
-#  - overlays/local-storage/create-auto-discover
-#  - overlays/local-storage/create-local-volumes/monitoring
-#  - overlays/local-storage/create-local-volumes/image-registry
+  - overlays/local-storage/operator/latest
+  - overlays/local-storage/create-auto-discover
+  - overlays/local-storage/create-local-volumes/monitoring
+  - overlays/local-storage/create-local-volumes/image-registry
   - overlays/configure-kubelet
-#  - overlays/openshift-monitoring
-#  - overlays/openshift-image-registry/block-storage
-#  - overlays/openshift-elasticsearch/operator/stable
-#  - overlays/openshift-logging/operator/stable
-#  - overlays/openshift-logging/create-cluster-logging-instance
+  - overlays/openshift-monitoring
+  - overlays/openshift-image-registry/block-storage
+  - overlays/openshift-elasticsearch/operator/stable
+  - overlays/openshift-logging/operator/stable
+  - overlays/openshift-logging/create-cluster-logging-instance
