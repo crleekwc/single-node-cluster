@@ -4,7 +4,7 @@ metadata:
   name: prometheus-k8s-db-prometheus-k8s-0
   namespace: openshift-monitoring
 spec:
-  storageClassName: monitoring
+  storageClassName: gp2
   volumeMode: Filesystem
   accessModes:
   - ReadWriteOnce
