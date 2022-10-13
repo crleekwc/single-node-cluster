@@ -26,5 +26,5 @@ patches:
           - devicePaths:
             - /dev/sdd
             fsType: xfs
-            storageClassName: cluster-logging
+            storageClassName: gp2
             volumeMode: Filesystem
